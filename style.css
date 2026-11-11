@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #302B43;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+/* HEADER */
+header {
+    width: 100%;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    background-color: #FFF8F0;
+    position: sticky;
+    top: 0;
+}
+.logo h1 {
+    font-size: 23px;
+    color: #302B43;
+    letter-spacing: 1px;
+}
+.logo span {
+    color: #7C5CFC;
+}
+nav {
+    display: flex;
+    gap: 18px;
+}
+nav a {
+    text-decoration: none;
+    color: #302B43;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #7C5CFC;
+}
+/* HOME + ABOUT */
+.home {
+    min-height: 88vh;
+    padding: 70px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.home-content {
+    width: 53%;
+    max-width: 100%;
+}
+.small-title {
+    color: #7C5CFC;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+.home h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+.home h2 span {
+    display: block;
+    color: #7C5CFC;
+}
+.home h3 {
+    color: #FF8A65;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.intro {
+    max-width: 620px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.about-info {
+    margin: 20px 0;
+    padding-left: 5px;
+}
+.about-info p {
+    margin: 5px 0;
+}
+.about-info strong {
+    color: #7C5CFC;
+}
+.main-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #7C5CFC;
+    color: #FFF8F0;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.main-btn:hover {
+    background-color: #FF8A65;
+    transform: translateY(-3px);
+}
+/* PROFILE IMAGE */
+.home-image {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.photo-circle {
+    width: 330px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 9px;
+    background-color: #7C5CFC;
+    box-shadow: 0 15px 40px rgba(124, 92, 252, 0.25);
+    position: relative;
+    flex-wrap: wrap;
+}
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid #FFF8F0;
+}
+.circle-decoration {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.circle-decoration.one {
+    width: 75px;
+    height: 75px;
+    background-color: #FF8A65;
+    top: 10px;
+    left: 10px;
+}
+.circle-decoration.two {
+    width: 45px;
+    height: 45px;
+    background-color: #7C5CFC;
+    bottom: 10px;
+     right: 40px;
+}
+/* GENERAL SECTIONS */
+
+.section {
+    max-width: 1150px;
+    margin: 70px auto;
+    padding: 70px 8%;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading p {
+    color: #FF8A65;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.heading h2 {
+    color: #302B43;
+    font-size: 40px;
+}
+/* SKILLS */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.skill-card {
+    width: 220px;
+    min-height: 220px;
+    padding: 30px 22px;
+    background-color: #FFF8F0;
+    border: 2px solid #7C5CFC;
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.35s;
+}
+.icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8A65;
+    color: #302B43;
+    font-weight: bold;
+    font-size: 13px;
+}
+.skill-card h3 {
+    color: #7C5CFC;
+    margin-bottom: 10px;
+}
+.skill-card p {
+    font-size: 14px;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(124, 92, 252, 0.18);
+    border-color: #FF8A65;
+}
+/* PROJECTS */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.project-card {
+    width: 310px;
+    min-height: 235px;
+    padding: 32px;
+    background-color: #FFF8F0;
+    border: 2px solid #7C5CFC;
+    border-radius: 22px;
+    transition: 0.35s;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #FF8A65;
+    box-shadow: 0 15px 35px rgba(124, 92, 252, 0.18);
+}
+.project-number {
+    color: #FF8A65;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.project-card h3 {
+    color: #7C5CFC;
+    font-size: 22px;
+    margin: 15px 0;
+}
+.project-card p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+/* EDUCATION TABLE */
+.table-container {
+    max-width: 850px;
+    margin: auto;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+th {
+    background-color: #7C5CFC;
+    color: #FFF8F0;
+    padding: 18px;
+    font-size: 17px;
+}
+td {
+    padding: 20px 15px;
+    border-bottom: 2px solid #7C5CFC;
+    font-size: 16px;
+}
+tbody tr {
+    transition: 0.3s;
+}
+tbody tr:hover {
+    background-color: #FF8A65;
+}
+.continue {
+    color: #7C5CFC;
+    font-weight: bold;
+}
+.complete {
+    color: #302B43;
+    font-weight: bold;
+}
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+.contact-text {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.contact-links a {
+    min-width: 120px;
+    padding: 11px 25px;
+    border: 2px solid #7C5CFC;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #302B43;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contact-links a:hover {
+    background-color: #7C5CFC;
+    color: #FFF8F0;
+    transform: translateY(-3px);
+}
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #FF8A65;
+}
+footer p {
+    font-size: 13px;
+}
